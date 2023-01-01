@@ -1,5 +1,5 @@
 @php
-$baseUrl = 'http://localhost:8081';
+$baseUrl = 'http://127.0.0.1:8081';
 @endphp
 
 <!--/slider-->
@@ -25,7 +25,7 @@ $baseUrl = 'http://localhost:8081';
                                     <button type="button" class="btn btn-default get">Get it now</button>
                                 </div>
                                 <div class="col-sm-6">
-                                    <img src="{{$baseUrl . $banner -> image_path}}" class="girl img-responsive"
+                                    <img src="{{$baseUrl . $banner->image_path}}" class="girl img-responsive"
                                          alt=""/>
 {{--                                    <img src="/eshoppers/eshopper/images/home/pricing.png" class="pricing" alt=""/>--}}
                                 </div>
