@@ -14,6 +14,7 @@ class HomeController extends Controller
         $banners = Banner::latest()->get();
         $categories = Category::where('parent_id', 0)->get();
         $products = Product::latest()->take(6)->get();
-        return view('home.home', compact('banners', 'categories', 'products'));
+        $productsRecommend = Product::latest('views_count', 'desc')->take(12)->get();
+        return view('home.home', compact('banners', 'categories', 'products', 'productsRecommend'));
     }
 }
